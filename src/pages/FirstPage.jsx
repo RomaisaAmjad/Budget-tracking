@@ -16,9 +16,7 @@ export default function FirstPage() {
             </div>
             <div> <img src={loginImg} alt="This is login Page Image" className='hidden lg:block w-80 lg:h-80 ' /></div>
         </div>
-        <div className='mt-76 lg:mt-0'>
-              <Footer/>
-        </div>
+        
         
 
     </div>

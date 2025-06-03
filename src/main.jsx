@@ -4,7 +4,7 @@ import './index.css';
 import App from './App.jsx';
 import Users from './pages/Users.jsx';
 import ProfileSection from './Components/ProfileSection.jsx';
-import MyAccount from './pages/Myaccount.jsx';
+import MyAccount from './pages/MyAccount.jsx';
 import Expenses from './pages/Expenses.jsx';
 import SignUp from './pages/SignUp.jsx';
 import Analytics from './pages/Analytics.jsx';
