@@ -30,7 +30,7 @@ export default function ForgotPassword() {
 
             <div> <img src={Forgot} alt="This is login Page Image" className='hidden lg:block h-80 w-100' /></div>
         </div>
-        <div className='mt-120'>
+        <div className='mt-120 lg:mt-0'>
              <Footer/>
         </div>
       

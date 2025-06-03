@@ -62,7 +62,7 @@ export default function Users() {
       </div>
    
     </div>
-    <div className='mt-65'>
+    <div className='mt-65 lg:mt-2'>
        <Footer />
        </div>
        </>

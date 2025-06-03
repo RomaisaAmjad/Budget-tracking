@@ -29,7 +29,7 @@ export default function SignUp() {
           />
         </div>
       </div>
-      <div className="mt-14">
+      <div className="mt-14 lg:mt-0">
            <Footer />
       </div>
     
