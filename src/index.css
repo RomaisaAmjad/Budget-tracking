@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* cleared by default input styles- the eye */
+input::-ms-reveal,
+input::-ms-clear,
+input::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
