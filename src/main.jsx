@@ -13,6 +13,7 @@ import ForgotPassword from './pages/ForgotPassword.jsx';
 import {createBrowserRouter,RouterProvider
 } from 'react-router-dom';
 import Landing from './pages/FirstPage.jsx';
+import PageNotFound from './pages/PageNotFound.jsx';
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,11 @@ const router = createBrowserRouter([
   {
     path: "/FirstPage",
     element: <FirstPage />
+  },
+  {
+    path: "/*",
+    element: <PageNotFound/>
+
   }
 ]);
 
