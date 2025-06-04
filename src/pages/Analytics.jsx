@@ -23,7 +23,7 @@ export default function Analytics() {
       },
       title: {
         display: true,
-        text: 'Monthly Sales Data'
+        text: 'Monthly Budget Data'
       }
     }
   };
