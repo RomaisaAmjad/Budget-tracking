@@ -40,7 +40,6 @@ export default function Sort({ heading }) {
               <option value="1">All</option>
               <option value="2">Amount</option>
               <option value="3">Date</option>
-              <option value="4">Expenditure</option>
             </select>
           </div>
 
