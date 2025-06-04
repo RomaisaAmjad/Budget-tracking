@@ -6,3 +6,9 @@ input::-ms-clear,
 input::-webkit-credentials-auto-fill-button {
   display: none !important;
 }
+
+@layer utilities {
+  .delay-spin-1000 {
+    animation-delay: 1s;
+  }
+}
