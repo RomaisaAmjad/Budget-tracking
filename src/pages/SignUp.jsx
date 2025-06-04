@@ -6,7 +6,7 @@ import Footer from "../Components/Footer.jsx";
 
 export default function SignUp() {
   return (
-    <div>
+    <div className='relative'>
       <div>
         <img src={Name} alt="This is the logo" className="h-16 p-5" />
       </div>
@@ -29,9 +29,10 @@ export default function SignUp() {
           />
         </div>
       </div>
-      <div className="mt-14 lg:mt-0">
-           <Footer />
-      </div>
+      <div className='absolute top-199 sm:bottom-0 left-0 w-full'>
+            <Footer/>
+        </div>
+     
     
     </div>
   );

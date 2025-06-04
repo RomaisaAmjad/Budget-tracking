@@ -6,7 +6,7 @@ import Footer from '../Components/Footer'
 
 export default function ForgotPassword() {
   return (
-     <div>
+     <div className='relative'>
         <div><img src={Name} alt="This is the logo" className='h-16 p-5' /></div>
         <div className='flex flex-row items-center justify-evenly  mb-9 '>
             <div className='border-2 border-none w-96'> 
@@ -30,8 +30,8 @@ export default function ForgotPassword() {
 
             <div> <img src={Forgot} alt="This is login Page Image" className='hidden lg:block h-80 w-100' /></div>
         </div>
-        <div className='mt-120 lg:mt-0'>
-             <Footer/>
+          <div className='absolute top-199 sm:bottom-0 lg:top-105 left-0 w-full'>
+            <Footer/>
         </div>
       
     </div>

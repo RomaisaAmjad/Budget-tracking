@@ -6,13 +6,15 @@ import Sort from '../Components/AddItem'
 
 export default function Expenses() {
   return (
+       
+    <div className='relative'>
     <div className='relative'>
       <Navbar />
-      <Sort heading={"Expenses"}/>
-
-<div className='lg:mt-50  mt-120'>
- <Footer />
-  </div>  
+      <Sort heading={"Expenses"}/> 
+    </div>
+    <div className='absolute top-199 sm:bottom-0 left-0 w-full'>
+            <Footer/>
+        </div>
     </div>
   )
 }

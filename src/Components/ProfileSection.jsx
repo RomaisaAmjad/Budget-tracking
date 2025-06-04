@@ -1,13 +1,9 @@
-import React from "react";
 import Navbar from "./Navbar.jsx";
-import { FaUser } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import {MdEmail,MdLocationOn,MdPhone,MdLink} from "react-icons/md"
 import Input from "./Input.jsx";
-import Header from "./Header.jsx";
 import ProfileCard from "./ProfileCard.jsx";
+import Footer from '../Components/Footer.jsx'
 
-export default function Profile() {
+export default function ProfileSection() {
   function UpdateButtonClicked() {
     alert("Profile Updated Successfully");
   }
@@ -15,10 +11,10 @@ export default function Profile() {
     alert("Profile Update Cancelled");
   }
   return (
-    <div>
+    <div className='relative'>
       <Navbar />
-      <div>
-        <div className="flex flex-col justify-start md:flex-col lg:flex-row lg:justify-evenly gap-2  min-h-screen bg-gray-200">
+      <div  className=" bg-gray-200" >
+        <div className="flex flex-col justify-start md:flex-col lg:flex-row lg:justify-evenly gap-2 min-h-screen p-3">
           {/* Left Profile Card */}
           <ProfileCard />
           
@@ -80,6 +76,9 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      <div className='absolute top-299 lg:top-213 sm:bottom-0 left-0 w-full bg-gray-200'>
+            <Footer/>
+        </div>
     </div>
   );
 }

@@ -46,7 +46,7 @@ export default function Navbar() {
             </div>
         <div className='flex flex-row items-center justify-between p-5 gap-5'>
             <FaBell className='text-2xl hover:cursor-pointer text-purple-900' />
-            <Link to='/Profile'>
+            <Link to='/ProfileSection'>
               <FaUser className='text-2xl hover:cursor-pointer text-purple-900' />
             </Link>
         </div>

@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 export default function Users() {
   return (
     <>
-    <div>
+    <div className='relative'>
       <Navbar />
       <h1 className="font-bold text-xl p-4">Users</h1>
 
@@ -62,9 +62,10 @@ export default function Users() {
       </div>
    
     </div>
-    <div className='mt-65 lg:mt-2'>
-       <Footer />
-       </div>
+    <div className='absolute top-199 sm:bottom-0 lg:top-110 left-0 w-full'>
+            <Footer/>
+        </div>
+   
        </>
   );
 }

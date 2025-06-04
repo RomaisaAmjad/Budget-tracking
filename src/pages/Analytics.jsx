@@ -29,7 +29,7 @@ export default function Analytics() {
   };
 
   return (
-    <div>
+    <div className='relative'>
       <Navbar />
       <div>
         <h1 className='font-bold text-xl p-3'>Analytics</h1>
@@ -40,10 +40,10 @@ export default function Analytics() {
         </div>
         
       </div>
-      <div className='mt-106 lg:mt-0'>
-          <Footer />
-      </div>
-      
+      <div className='absolute top-199 sm:bottom-0 left-0 w-full'>
+            <Footer/>
+        </div>
+     
     </div>
   )
 }

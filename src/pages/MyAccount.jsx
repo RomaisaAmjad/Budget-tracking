@@ -11,8 +11,8 @@ export default function MyAccount() {
   return (
     <div>
       <Navbar />
-      <div>
-        <div className="flex flex-col justify-start md:flex-col lg:flex-row lg:justify-evenly gap-2  min-h-screen bg-gray-200">
+      <>
+        <div className="flex flex-col justify-start md:flex-col lg:flex-row lg:justify-evenly gap-2  min-h-screen p-3  bg-gray-200">
           {/* Left Profile Card */}
          <ProfileCard/>
 
@@ -74,7 +74,7 @@ export default function MyAccount() {
             </div>
           </div>
         </div>
-      </div>
+      </>
       <Footer/>
     </div>
   );
