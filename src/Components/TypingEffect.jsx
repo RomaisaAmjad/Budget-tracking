@@ -1,5 +1,5 @@
 import { motion, useAnimationControls } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 function TypingEffect({
   words = ["This", "Page", "Doesn't", "Exists!🔥"],
@@ -12,8 +12,14 @@ function TypingEffect({
   const [isDeleting, setIsDeleting] = useState(false);
   const controls = useAnimationControls();
 
+  const timerRef = useRef(null);
+
   useEffect(() => {
     const word = words[currentWordIndex];
+
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
 
     if (isDeleting) {
       if (currentText === "") {
@@ -22,23 +28,22 @@ function TypingEffect({
         return;
       }
 
-      const timer = setTimeout(() => {
+      timerRef.current = setTimeout(() => {
         setCurrentText(word.substring(0, currentText.length - 1));
       }, deleteSpeed);
-      return () => clearTimeout(timer);
+      return;
     }
 
     if (currentText === word) {
-      const timer = setTimeout(() => {
+      timerRef.current = setTimeout(() => {
         setIsDeleting(true);
       }, delayBetweenWords);
-      return () => clearTimeout(timer);
+      return;
     }
 
-    const timer = setTimeout(() => {
+    timerRef.current = setTimeout(() => {
       setCurrentText(word.substring(0, currentText.length + 1));
     }, typingSpeed);
-    return () => clearTimeout(timer);
   }, [currentText, currentWordIndex, isDeleting, words, typingSpeed, deleteSpeed, delayBetweenWords]);
 
   useEffect(() => {
@@ -53,7 +58,7 @@ function TypingEffect({
   }, [controls]);
 
   return (
-    <div className="w-full h-full flex items-center justify-cente opacity-100">
+    <div className="w-full h-full flex items-center justify-center opacity-100">
       <div className="text-3xl lg:text-7xl font-mono font-bold text-black">
         {currentText}
         <motion.span animate={controls}>|</motion.span>
@@ -62,6 +67,8 @@ function TypingEffect({
   );
 }
 
-export default function TypingAnimatedText() {
+function TypingAnimatedText() {
   return <TypingEffect />;
 }
+
+export default TypingEffect;

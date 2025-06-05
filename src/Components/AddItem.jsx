@@ -3,7 +3,7 @@ import { FaSearch, FaTrash } from "react-icons/fa";
 import RecordItem from "./RecordItem.jsx";
 
 export default function Sort({ heading }) {
-  const [Expenses, setExpenses] = useState([]);
+  const [expense, setExpense] = useState([]);
   const [show, setShow] = useState(false);
 
   const handleExpense = (e) => {
@@ -11,12 +11,12 @@ export default function Sort({ heading }) {
       alert("Incomplete Data.");
       return;
     }
-    setExpenses((prev) => [...prev, e]);
+    setExpense((prev) => [...prev, e]);
     setShow(false);
   };
 
   const Delete = (Expense) => {
-    setExpenses(Expenses.filter((expense) => expense.id !== Expense.id));
+    setExpense(expense.filter((expense) => expense.id !== Expense.id));
   };
 
   const toggleShow = () => setShow(!show);
@@ -86,7 +86,7 @@ export default function Sort({ heading }) {
           </tr>
         </thead>
         <tbody>
-          {Expenses.map((expense, index) => (
+          {expense.map((expense, index) => (
             <tr key={expense.id || index}>
               <td className="border border-gray-300 p-2 text-center">
                 {expense.name}
