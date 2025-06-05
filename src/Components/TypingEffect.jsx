@@ -67,8 +67,4 @@ function TypingEffect({
   );
 }
 
-function TypingAnimatedText() {
-  return <TypingEffect />;
-}
-
 export default TypingEffect;

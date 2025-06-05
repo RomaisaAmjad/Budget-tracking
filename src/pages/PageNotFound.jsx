@@ -1,5 +1,5 @@
 import ErrorImg from '../assets/404Error.png';
-import TypingAnimatedText from '../Components/TypingEffect.jsx';
+import TypingEffect from '../Components/TypingEffect.jsx';
 
 export default function PageNotFound() {
   return (
@@ -8,7 +8,7 @@ export default function PageNotFound() {
         > <img className='w-2/4 hover:cursor-pointer hover:animate-bounce' src={ErrorImg} alt="Error 404" />
         {/* <img  className='w-2/4 hover:cursor-pointer' src={WorriedKid} alt="Worried Kid" /> */}
         </div>
-        <TypingAnimatedText/>
+        <TypingEffect/>
      
     </div>
   );
