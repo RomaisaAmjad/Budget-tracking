@@ -4,16 +4,16 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white text-center p-8 mt-auto">
       <div className="flex justify-center items-center gap-4 text-xl">
-        <a href="https://www.youtube.com/@ClashOfClans" target="_blank" rel="noreferrer">
+        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
           <FaYoutube />
         </a>
-        <a href="https://twitter.com/ClashofClans" target="_blank" rel="noreferrer">
+        <a href="https://twitter.com" target="_blank" rel="noreferrer">
           <FaTwitter />
         </a>
-        <a href="https://www.instagram.com/clashofclans/" target="_blank" rel="noreferrer">
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
           <FaInstagram />
         </a>
-        <a href="https://www.facebook.com/ClashofClans" target="_blank" rel="noreferrer">
+        <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
           <FaFacebook />
         </a>
       </div>
